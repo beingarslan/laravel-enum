@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\Models;
+namespace Arslan\Enum\Tests\Models;
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 use Illuminate\Database\Eloquent\Model;
 
 /**

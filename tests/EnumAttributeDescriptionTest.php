@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Exceptions\InvalidEnumMemberException;
-use BenSampo\Enum\Tests\Enums\DescriptionFromAttribute;
-use BenSampo\Enum\Tests\Enums\InvalidMultipleClassDescriptionFromAttribute;
+use Arslan\Enum\Exceptions\InvalidEnumMemberException;
+use Arslan\Enum\Tests\Enums\DescriptionFromAttribute;
+use Arslan\Enum\Tests\Enums\InvalidMultipleClassDescriptionFromAttribute;
 use PHPUnit\Framework\TestCase;
 
 final class EnumAttributeDescriptionTest extends TestCase

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 use Illuminate\Support\Facades\Validator;
 
 final class EnumPipeValidationTest extends ApplicationTestCase

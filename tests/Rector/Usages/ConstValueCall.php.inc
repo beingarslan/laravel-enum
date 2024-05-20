@@ -1,8 +1,8 @@
 <?php
 
-namespace BenSampo\Enum\Tests\Rector\Usages;
+namespace Arslan\Enum\Tests\Rector\Usages;
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 class ConstValueCall {
     public function __construct(int $value) {}
@@ -20,9 +20,9 @@ $intOrString(UserType::class);
 -----
 <?php
 
-namespace BenSampo\Enum\Tests\Rector\Usages;
+namespace Arslan\Enum\Tests\Rector\Usages;
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 class ConstValueCall {
     public function __construct(int $value) {}

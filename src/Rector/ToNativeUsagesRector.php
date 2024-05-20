@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Rector;
+namespace Arslan\Enum\Rector;
 
-use BenSampo\Enum\Enum;
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Enum;
+use Arslan\Enum\Tests\Enums\UserType;
 use Illuminate\Support\Arr;
 use PhpParser\Node;
 use PhpParser\Node\Arg;
@@ -53,7 +53,7 @@ use Rector\StaticTypeMapper\ValueObject\Type\FullyQualifiedObjectType;
 use Symplify\RuleDocGenerator\ValueObject\CodeSample\ConfiguredCodeSample;
 use Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 
-/** @see \BenSampo\Enum\Tests\Rector\ToNativeRectorUsagesTest */
+/** @see \Arslan\Enum\Tests\Rector\ToNativeRectorUsagesTest */
 class ToNativeUsagesRector extends ToNativeRector
 {
     public const COMPARED_AGAINST_ENUM_INSTANCE = ToNativeUsagesRector::class . '@compared-against-enum-instance';
@@ -61,7 +61,7 @@ class ToNativeUsagesRector extends ToNativeRector
 
     public function getRuleDefinition(): RuleDefinition
     {
-        return new RuleDefinition('Convert usages of BenSampo\Enum\Enum to native PHP enums', [
+        return new RuleDefinition('Convert usages of Arslan\Enum\Enum to native PHP enums', [
             new ConfiguredCodeSample(
                 <<<'CODE_SAMPLE'
 $user = UserType::ADMIN();
@@ -921,7 +921,7 @@ CODE_SAMPLE,
 
     protected function refactorCall(CallLike $call): ?CallLike
     {
-        // At this point, we know the call is neither new'ing up a Bensampo\Enum\Enum,
+        // At this point, we know the call is neither new'ing up a Arslan\Enum\Enum,
         // nor is it statically or dynamically calling any of its methods which require
         // special conversion rules. Thus, we are safe to transform any const fetches to values.
 

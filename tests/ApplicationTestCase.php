@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\EnumServiceProvider;
+use Arslan\Enum\EnumServiceProvider;
 use Orchestra\Testbench\TestCase;
 
 class ApplicationTestCase extends TestCase

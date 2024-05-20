@@ -1,6 +1,6 @@
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 /** @var UserType $userType */
 $userType->notIn([UserType::Administrator]);
@@ -8,7 +8,7 @@ $userType?->notIn([UserType::Administrator, $userType]);
 -----
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 /** @var UserType $userType */
 !in_array($userType, [UserType::Administrator]);

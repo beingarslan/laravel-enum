@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 /**
  * @method static static OptionOne()

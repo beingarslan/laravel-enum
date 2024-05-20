@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Rules\Enum;
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Rules\Enum;
+use Arslan\Enum\Tests\Enums\UserType;
 use PHPUnit\Framework\TestCase;
 
 final class EnumValidationTest extends TestCase

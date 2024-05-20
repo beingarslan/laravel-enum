@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum;
+namespace Arslan\Enum;
 
-use BenSampo\Enum\Exceptions\InvalidEnumMemberException;
+use Arslan\Enum\Exceptions\InvalidEnumMemberException;
 
 /**
  * @method static static None()

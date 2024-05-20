@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Commands;
+namespace Arslan\Enum\Commands;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Process;
 use Symfony\Component\Console\Input\InputArgument;
@@ -14,7 +14,7 @@ class EnumToNativeCommand extends Command
 
     protected $name = 'enum:to-native';
 
-    protected $description = 'Use Rector to convert classes that extend BenSampo\Enum\Enum to native PHP enums';
+    protected $description = 'Use Rector to convert classes that extend Arslan\Enum\Enum to native PHP enums';
 
     /** @return array<int, array<int, mixed>> */
     protected function getArguments(): array
@@ -57,7 +57,7 @@ class EnumToNativeCommand extends Command
             $run($convertUsagesAndImplementation);
         } else {
             // If not, we have to do two steps to avoid partial conversion,
-            // since the usages conversion relies on the enums extending BenSampo\Enum\Enum.
+            // since the usages conversion relies on the enums extending Arslan\Enum\Enum.
             $usagesConfig = realpath(__DIR__ . '/../Rector/usages.php');
             $convertUsages = "vendor/bin/rector process --clear-cache --config={$usagesConfig}";
             $this->info("Converting usages, running: {$convertUsages}");

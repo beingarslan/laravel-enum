@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Tests\Enums\SuperPowers;
-use BenSampo\Enum\Tests\Models\WithQueriesFlaggedEnums as TestModel;
+use Arslan\Enum\Tests\Enums\SuperPowers;
+use Arslan\Enum\Tests\Models\WithQueriesFlaggedEnums as TestModel;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;

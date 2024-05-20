@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use BenSampo\Enum\FlaggedEnum;
+use Arslan\Enum\FlaggedEnum;
 
 /**
  * @method static static FlagOne()

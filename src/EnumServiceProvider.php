@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum;
+namespace Arslan\Enum;
 
-use BenSampo\Enum\Commands\EnumAnnotateCommand;
-use BenSampo\Enum\Commands\EnumToNativeCommand;
-use BenSampo\Enum\Commands\MakeEnumCommand;
-use BenSampo\Enum\Rules\Enum;
-use BenSampo\Enum\Rules\EnumKey;
-use BenSampo\Enum\Rules\EnumValue;
+use Arslan\Enum\Commands\EnumAnnotateCommand;
+use Arslan\Enum\Commands\EnumToNativeCommand;
+use Arslan\Enum\Commands\MakeEnumCommand;
+use Arslan\Enum\Rules\Enum;
+use Arslan\Enum\Rules\EnumKey;
+use Arslan\Enum\Rules\EnumValue;
 use Doctrine\DBAL\Types\Type;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Support\ServiceProvider;

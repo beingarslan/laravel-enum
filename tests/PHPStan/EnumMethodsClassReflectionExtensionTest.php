@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\PHPStan;
+namespace Arslan\Enum\Tests\PHPStan;
 
-use BenSampo\Enum\PHPStan\EnumMethodsClassReflectionExtension;
-use BenSampo\Enum\Tests\Enums\AnnotatedConstants;
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\PHPStan\EnumMethodsClassReflectionExtension;
+use Arslan\Enum\Tests\Enums\AnnotatedConstants;
+use Arslan\Enum\Tests\Enums\UserType;
 use PHPStan\Reflection\ClassReflection as PHPStanClassReflection;
 use PHPStan\Reflection\MethodReflection;
 use PHPStan\Testing\PHPStanTestCase;

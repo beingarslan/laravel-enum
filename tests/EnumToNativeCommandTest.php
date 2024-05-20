@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Commands\EnumToNativeCommand;
-use BenSampo\Enum\Enum;
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Commands\EnumToNativeCommand;
+use Arslan\Enum\Enum;
+use Arslan\Enum\Tests\Enums\UserType;
 use Illuminate\Process\PendingProcess;
 use Illuminate\Support\Facades\Process;
 

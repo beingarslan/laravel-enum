@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\Enums\Annotate;
+namespace Arslan\Enum\Tests\Enums\Annotate;
 
-use BenSampo\Enum\Contracts\LocalizedEnum;
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Contracts\LocalizedEnum;
+use Arslan\Enum\Enum;
 
 /**
  * @method static static FOO_BAR_BAZ_ETC_LONG_NAME_FOR_TESTING_SAKE_1()

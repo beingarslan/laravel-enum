@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\Models;
+namespace Arslan\Enum\Tests\Models;
 
-use BenSampo\Enum\Tests\Enums\UserType;
-use BenSampo\Enum\Tests\Enums\UserTypeCustomCast;
+use Arslan\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserTypeCustomCast;
 use Illuminate\Database\Eloquent\Model;
 
 /**

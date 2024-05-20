@@ -1,8 +1,8 @@
 <?php
 
-namespace BenSampo\Enum\Tests\Rector\Usages;
+namespace Arslan\Enum\Tests\Rector\Usages;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 /**
  * Uses magic calls to instantiate itself.
@@ -33,9 +33,9 @@ class MagicCall extends Enum
 -----
 <?php
 
-namespace BenSampo\Enum\Tests\Rector\Usages;
+namespace Arslan\Enum\Tests\Rector\Usages;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 /**
  * Uses magic calls to instantiate itself.

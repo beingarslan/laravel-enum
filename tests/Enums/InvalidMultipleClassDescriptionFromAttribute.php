@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\Enums;
+namespace Arslan\Enum\Tests\Enums;
 
-use BenSampo\Enum\Attributes\Description;
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Attributes\Description;
+use Arslan\Enum\Enum;
 
 /**
  * @extends Enum<self::*>

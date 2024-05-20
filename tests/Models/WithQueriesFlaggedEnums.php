@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\Models;
+namespace Arslan\Enum\Tests\Models;
 
-use BenSampo\Enum\Traits\QueriesFlaggedEnums;
+use Arslan\Enum\Traits\QueriesFlaggedEnums;
 use Illuminate\Database\Eloquent\Model;
 
 class WithQueriesFlaggedEnums extends Model

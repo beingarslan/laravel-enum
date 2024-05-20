@@ -1,7 +1,7 @@
 services:
-- class: BenSampo\Enum\PHPStan\EnumMethodsClassReflectionExtension
+- class: Arslan\Enum\PHPStan\EnumMethodsClassReflectionExtension
   tags:
   - phpstan.broker.methodsClassReflectionExtension
-- class: BenSampo\Enum\PHPStan\UniqueValuesRule
+- class: Arslan\Enum\PHPStan\UniqueValuesRule
   tags:
   - phpstan.rules.rule

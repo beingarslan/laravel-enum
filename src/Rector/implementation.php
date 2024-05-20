@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
-use BenSampo\Enum\Commands\EnumToNativeCommand;
-use BenSampo\Enum\Rector\ToNativeImplementationRector;
+use Arslan\Enum\Commands\EnumToNativeCommand;
+use Arslan\Enum\Rector\ToNativeImplementationRector;
 use Rector\Config\RectorConfig;
 
 return static function (RectorConfig $rectorConfig): void {

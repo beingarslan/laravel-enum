@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Tests\Enums\SingleValue;
+use Arslan\Enum\Tests\Enums\SingleValue;
 use PHPUnit\Framework\TestCase;
 
 final class EnumRandomTest extends TestCase

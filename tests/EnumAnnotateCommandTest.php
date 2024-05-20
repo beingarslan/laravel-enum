@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
 use Illuminate\Filesystem\Filesystem;
 
@@ -12,7 +12,7 @@ final class EnumAnnotateCommandTest extends ApplicationTestCase
         $filesystem = $this->filesystem();
         $this->prepareAnnotateDirectory($filesystem, 'AnnotateOriginals');
 
-        $this->artisan('enum:annotate', ['class' => "BenSampo\\Enum\\Tests\\Enums\\Annotate\\{$class}"])
+        $this->artisan('enum:annotate', ['class' => "Arslan\\Enum\\Tests\\Enums\\Annotate\\{$class}"])
             ->assertExitCode(0);
 
         $this->assertAnnotatedClassMatchesFixture($filesystem, $class);
@@ -24,7 +24,7 @@ final class EnumAnnotateCommandTest extends ApplicationTestCase
         $filesystem = $this->filesystem();
         $this->prepareAnnotateDirectory($filesystem, 'AnnotateFixtures');
 
-        $this->artisan('enum:annotate', ['class' => "BenSampo\\Enum\\Tests\\Enums\\Annotate\\{$class}"])
+        $this->artisan('enum:annotate', ['class' => "Arslan\\Enum\\Tests\\Enums\\Annotate\\{$class}"])
             ->assertExitCode(0);
 
         $this->assertAnnotatedClassMatchesFixture($filesystem, $class);

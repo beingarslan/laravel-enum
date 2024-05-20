@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\PHPStan\Fixtures;
+namespace Arslan\Enum\Tests\PHPStan\Fixtures;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 /**
  * @extends Enum<string>

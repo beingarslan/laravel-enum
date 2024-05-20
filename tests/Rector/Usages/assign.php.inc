@@ -1,6 +1,6 @@
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 class Foo {
     public UserType $userType;
@@ -21,7 +21,7 @@ $ref &= UserType::Administrator;
 -----
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 class Foo {
     public UserType $userType;

@@ -1,6 +1,6 @@
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 /** @var UserType $userType */
 
@@ -32,7 +32,7 @@ switch ('foo') {
 -----
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 /** @var UserType $userType */
 

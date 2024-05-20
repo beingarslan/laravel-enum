@@ -2,11 +2,11 @@
 
 ## ToNativeImplementationRector
 
-Convert usages of `BenSampo\Enum\Enum` to native PHP enums
+Convert usages of `Arslan\Enum\Enum` to native PHP enums
 
 :wrench: **configure it!**
 
-- class: [`BenSampo\Enum\Rector\ToNativeImplementationRector`](src/Rector/ToNativeImplementationRector.php)
+- class: [`Arslan\Enum\Rector\ToNativeImplementationRector`](src/Rector/ToNativeImplementationRector.php)
 
 ```diff
 -/**
@@ -29,11 +29,11 @@ Convert usages of `BenSampo\Enum\Enum` to native PHP enums
 
 ## ToNativeUsagesRector
 
-Convert usages of `BenSampo\Enum\Enum` to native PHP enums
+Convert usages of `Arslan\Enum\Enum` to native PHP enums
 
 :wrench: **configure it!**
 
-- class: [`BenSampo\Enum\Rector\ToNativeUsagesRector`](src/Rector/ToNativeUsagesRector.php)
+- class: [`Arslan\Enum\Rector\ToNativeUsagesRector`](src/Rector/ToNativeUsagesRector.php)
 
 ```diff
 -$user = UserType::ADMIN();

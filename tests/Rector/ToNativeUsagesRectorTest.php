@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\Rector;
+namespace Arslan\Enum\Tests\Rector;
 
 use Rector\Testing\PHPUnit\AbstractRectorTestCase;
 
-/** @see \BenSampo\Enum\Rector\ToNativeUsagesRector */
+/** @see \Arslan\Enum\Rector\ToNativeUsagesRector */
 final class ToNativeUsagesRectorTest extends AbstractRectorTestCase
 {
     /** @dataProvider provideData */

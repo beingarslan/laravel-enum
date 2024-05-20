@@ -1,7 +1,7 @@
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
-use BenSampo\Enum\Tests\Enums\StringValues;
+use Arslan\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\StringValues;
 
 /** @var int $int */
 /** @var string $string */
@@ -25,8 +25,8 @@ StringValues::hasValue(...);
 -----
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
-use BenSampo\Enum\Tests\Enums\StringValues;
+use Arslan\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\StringValues;
 
 /** @var int $int */
 /** @var string $string */

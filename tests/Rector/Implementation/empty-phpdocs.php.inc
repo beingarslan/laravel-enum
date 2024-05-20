@@ -1,6 +1,6 @@
 <?php
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 /**
  * @method static static BAR()
@@ -15,7 +15,7 @@ class Foo extends Enum
 -----
 <?php
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 enum Foo : int
 {

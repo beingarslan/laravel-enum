@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Tests\Enums\Child;
-use BenSampo\Enum\Tests\Enums\ParentEnum;
+use Arslan\Enum\Tests\Enums\Child;
+use Arslan\Enum\Tests\Enums\ParentEnum;
 use PHPUnit\Framework\TestCase;
 
 /**

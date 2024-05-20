@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Exceptions\InvalidEnumMemberException;
-use BenSampo\Enum\Tests\Enums\UserType;
-use BenSampo\Enum\Tests\Enums\UserTypeCustomCast;
-use BenSampo\Enum\Tests\Models\NativeCastModel;
+use Arslan\Enum\Exceptions\InvalidEnumMemberException;
+use Arslan\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserTypeCustomCast;
+use Arslan\Enum\Tests\Models\NativeCastModel;
 use PHPUnit\Framework\TestCase;
 
 final class NativeEnumCastTest extends TestCase

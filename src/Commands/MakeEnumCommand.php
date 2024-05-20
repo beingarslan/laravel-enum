@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Commands;
+namespace Arslan\Enum\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;

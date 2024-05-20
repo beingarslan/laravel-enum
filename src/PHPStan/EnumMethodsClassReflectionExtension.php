@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\PHPStan;
+namespace Arslan\Enum\PHPStan;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Reflection\MethodReflection;
 use PHPStan\Reflection\MethodsClassReflectionExtension;

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
 use Illuminate\Contracts\Console\Kernel as ConsoleKernel;
 

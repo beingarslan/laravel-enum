@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Rules;
+namespace Arslan\Enum\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
@@ -10,7 +10,7 @@ class Enum implements Rule
     protected string $rule = 'enum';
 
     public function __construct(
-        /** @var class-string<\BenSampo\Enum\Enum<mixed>> */
+        /** @var class-string<\Arslan\Enum\Enum<mixed>> */
         protected string $enumClass
     ) {
         if (! class_exists($this->enumClass)) {

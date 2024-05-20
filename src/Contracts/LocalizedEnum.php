@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Contracts;
+namespace Arslan\Enum\Contracts;
 
 interface LocalizedEnum
 {

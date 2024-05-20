@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Rector;
+namespace Arslan\Enum\Rector;
 
-use BenSampo\Enum\Enum;
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Enum;
+use Arslan\Enum\Tests\Enums\UserType;
 use PhpParser\Comment\Doc;
 use PhpParser\Node;
 use PhpParser\Node\Identifier;
@@ -21,7 +21,7 @@ use Rector\PhpParser\Node\Value\ValueResolver;
 use Symplify\RuleDocGenerator\ValueObject\CodeSample\ConfiguredCodeSample;
 use Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 
-/** @see \BenSampo\Enum\Tests\Rector\ToNativeRectorImplementationTest */
+/** @see \Arslan\Enum\Tests\Rector\ToNativeRectorImplementationTest */
 class ToNativeImplementationRector extends ToNativeRector
 {
     public function __construct(
@@ -34,7 +34,7 @@ class ToNativeImplementationRector extends ToNativeRector
 
     public function getRuleDefinition(): RuleDefinition
     {
-        return new RuleDefinition('Convert usages of BenSampo\Enum\Enum to native PHP enums', [
+        return new RuleDefinition('Convert usages of Arslan\Enum\Enum to native PHP enums', [
             new ConfiguredCodeSample(
                 <<<'CODE_SAMPLE'
 /**

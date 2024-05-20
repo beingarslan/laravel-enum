@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Rules\EnumValue;
-use BenSampo\Enum\Tests\Enums\StringValues;
-use BenSampo\Enum\Tests\Enums\SuperPowers;
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Rules\EnumValue;
+use Arslan\Enum\Tests\Enums\StringValues;
+use Arslan\Enum\Tests\Enums\SuperPowers;
+use Arslan\Enum\Tests\Enums\UserType;
 use PHPUnit\Framework\TestCase;
 
 final class EnumValueTest extends TestCase

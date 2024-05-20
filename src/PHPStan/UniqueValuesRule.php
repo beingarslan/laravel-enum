@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\PHPStan;
+namespace Arslan\Enum\PHPStan;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 use PhpParser\Node;
 use PHPStan\Analyser\Scope;
 use PHPStan\Node\InClassNode;

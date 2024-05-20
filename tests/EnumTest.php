@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Enum;
-use BenSampo\Enum\Tests\Enums\MixedKeyFormats;
-use BenSampo\Enum\Tests\Enums\StringValues;
-use BenSampo\Enum\Tests\Enums\SuperPowers;
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Enum;
+use Arslan\Enum\Tests\Enums\MixedKeyFormats;
+use Arslan\Enum\Tests\Enums\StringValues;
+use Arslan\Enum\Tests\Enums\SuperPowers;
+use Arslan\Enum\Tests\Enums\UserType;
 use Illuminate\Support\Collection;
 use PHPUnit\Framework\TestCase;
 

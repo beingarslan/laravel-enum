@@ -1,6 +1,6 @@
 <?php
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 /**
  * Uses magic calls to instantiate itself.
@@ -31,7 +31,7 @@ class MagicCall extends Enum
 -----
 <?php
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 /**
  * Uses magic calls to instantiate itself.

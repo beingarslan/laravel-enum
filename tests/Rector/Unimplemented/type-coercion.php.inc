@@ -1,6 +1,6 @@
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 /** @var UserType $userType */
 /** @var UserType|null $maybeUserType */
@@ -11,7 +11,7 @@ notStrict($maybeUserType);
 -----
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 
 /** @var UserType $userType */
 /** @var UserType|null $maybeUserType */

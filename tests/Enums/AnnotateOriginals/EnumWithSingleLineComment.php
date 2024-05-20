@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\Enums\Annotate;
+namespace Arslan\Enum\Tests\Enums\Annotate;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 /**
  * This is a test enum with single line comment.

@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Exceptions;
+namespace Arslan\Enum\Exceptions;
 
 class InvalidEnumMemberException extends \Exception
 {
-    /** @param  class-string<\BenSampo\Enum\Enum<mixed>>  $enum */
+    /** @param  class-string<\Arslan\Enum\Enum<mixed>>  $enum */
     public function __construct(mixed $invalidValue, string $enum)
     {
         $invalidValueType = gettype($invalidValue);

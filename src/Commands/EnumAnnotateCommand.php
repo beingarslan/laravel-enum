@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Commands;
+namespace Arslan\Enum\Commands;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 use Composer\ClassMapGenerator\ClassMapGenerator;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -75,7 +75,7 @@ class EnumAnnotateCommand extends Command
         }
     }
 
-    /** @param  \ReflectionClass<\BenSampo\Enum\Enum<mixed>> $reflectionClass */
+    /** @param  \ReflectionClass<\Arslan\Enum\Enum<mixed>> $reflectionClass */
     protected function annotate(\ReflectionClass $reflectionClass): void
     {
         $docBlock = $this->getDocBlock($reflectionClass);
@@ -111,7 +111,7 @@ class EnumAnnotateCommand extends Command
         $this->info("Wrote new phpDocBlock to {$fileName}.");
     }
 
-    /** @param  \ReflectionClass<\BenSampo\Enum\Enum<mixed>> $reflectionClass */
+    /** @param  \ReflectionClass<\Arslan\Enum\Enum<mixed>> $reflectionClass */
     protected function getDocBlock(\ReflectionClass $reflectionClass): DocBlockGenerator
     {
         $docBlock = DocBlockGenerator::fromArray([])
@@ -145,7 +145,7 @@ class EnumAnnotateCommand extends Command
     }
 
     /**
-     * @param  \ReflectionClass<\BenSampo\Enum\Enum<mixed>> $reflectionClass
+     * @param  \ReflectionClass<\Arslan\Enum\Enum<mixed>> $reflectionClass
      *
      * @return array<\Laminas\Code\Generator\DocBlock\Tag\TagInterface>
      */

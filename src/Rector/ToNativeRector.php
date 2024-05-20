@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Rector;
+namespace Arslan\Enum\Rector;
 
 use Illuminate\Support\Arr;
 use PhpParser\Node;

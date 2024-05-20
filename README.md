@@ -1,7 +1,7 @@
-<p align="center"><img src="https://github.com/BenSampo/laravel-enum/raw/master/branding/logo.svg?sanitize=true" alt="Laravel Enum" width="250" style="margin-bottom: 20px"></p>
+<p align="center"><img src="https://github.com/Arslan/laravel-enum/raw/master/branding/logo.svg?sanitize=true" alt="Laravel Enum" width="250" style="margin-bottom: 20px"></p>
 <p align="center">
-<a href="https://packagist.org/packages/bensampo/laravel-enum"><img src="https://img.shields.io/packagist/v/bensampo/laravel-enum.svg?style=flat-square&label=stable" alt="Packagist Stable Version"></a>
-<a href="https://packagist.org/packages/bensampo/laravel-enum"><img src="https://img.shields.io/packagist/dt/bensampo/laravel-enum.svg?style=flat-square" alt="Packagist downloads"></a>
+<a href="https://packagist.org/packages/Arslan/laravel-enum"><img src="https://img.shields.io/packagist/v/Arslan/laravel-enum.svg?style=flat-square&label=stable" alt="Packagist Stable Version"></a>
+<a href="https://packagist.org/packages/Arslan/laravel-enum"><img src="https://img.shields.io/packagist/dt/Arslan/laravel-enum.svg?style=flat-square" alt="Packagist downloads"></a>
 <a href="LICENSE.txt"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="MIT Software License"></a>
 </p>
 
@@ -10,7 +10,7 @@
 Using this library is no longer recommended, especially for new projects.
 PHP 8.1 supports enums natively.
 
-See https://github.com/BenSampo/laravel-enum/issues/332.
+See https://github.com/Arslan/laravel-enum/issues/332.
 
 ## About Laravel Enum
 
@@ -61,9 +61,9 @@ Created by [Ben Sampson](https://sampo.co.uk)
 
 You are reading the documentation for `6.x`.
 
-- If you're using **Laravel 8** please see the [docs for `4.x`](https://github.com/BenSampo/laravel-enum/blob/v4.2.0/README.md).
-- If you're using **Laravel 7** please see the [docs for `2.x`](https://github.com/BenSampo/laravel-enum/blob/v2.2.0/README.md).
-- If you're using **Laravel 6** or below, please see the [docs for `1.x`](https://github.com/BenSampo/laravel-enum/blob/v1.38.0/README.md).
+- If you're using **Laravel 8** please see the [docs for `4.x`](https://github.com/Arslan/laravel-enum/blob/v4.2.0/README.md).
+- If you're using **Laravel 7** please see the [docs for `2.x`](https://github.com/Arslan/laravel-enum/blob/v2.2.0/README.md).
+- If you're using **Laravel 6** or below, please see the [docs for `1.x`](https://github.com/Arslan/laravel-enum/blob/v1.38.0/README.md).
 
 Please see the [upgrade guide](UPGRADE.md) for information on how to upgrade to the latest version.
 
@@ -76,13 +76,13 @@ I wrote a blog post about using laravel-enum: https://sampo.co.uk/blog/using-enu
 Requires PHP 8, and Laravel 9 or 10.
 
 ```sh
-composer require bensampo/laravel-enum
+composer require Arslan/laravel-enum
 ```
 
 ## Migrate to Native PHP Enums
 
 PHP 8.1 supports enums natively.
-You can migrate your usages of `BenSampo\Enum\Enum` to native PHP enums using the following steps.
+You can migrate your usages of `Arslan\Enum\Enum` to native PHP enums using the following steps.
 
 Make sure you meet the following requirements:
 - PHP 8.1 or higher
@@ -103,7 +103,7 @@ Review and validate the code changes for missed edge cases:
 - `Enum::coerce()`: If only values were passed, you can replace it with `tryFrom()`.
    If keys or instances could also be passed, you might need additional logic to cover this.
 - `Enum::$description` and `Enum::getDescription()`: Implement an alternative.
-- try/catch-blocks that handle `BenSampo\Enum\Exceptions\InvalidEnumKeyException` or `BenSampo\Enum\Exceptions\InvalidEnumMemberException`.
+- try/catch-blocks that handle `Arslan\Enum\Exceptions\InvalidEnumKeyException` or `Arslan\Enum\Exceptions\InvalidEnumMemberException`.
   Either catch the `ValueError` thrown by native enums, or switch to using `tryFrom()` and handle `null`.
 
 Once all enums are converted, you can remove your dependency on this library.
@@ -131,7 +131,7 @@ Now, you just need to add the possible values your enum can have as constants.
 
 namespace App\Enums;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 final class UserType extends Enum
 {
@@ -533,7 +533,7 @@ You may cast model attributes to enums using Laravel's built in custom casting. 
 Since `Enum::class` implements the `Castable` contract, you just need to specify the classname of the enum:
 
 ```php
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 use Illuminate\Database\Eloquent\Model;
 
 class Example extends Model
@@ -704,7 +704,7 @@ class CreateUsersTable extends Migration
 You may validate that an enum value passed to a controller is a valid value for a given enum by using the `EnumValue` rule.
 
 ```php
-use BenSampo\Enum\Rules\EnumValue;
+use Arslan\Enum\Rules\EnumValue;
 
 public function store(Request $request)
 {
@@ -725,7 +725,7 @@ new EnumValue(UserType::class, false) // Turn off strict type checking.
 You can also validate on keys using the `EnumKey` rule. This is useful if you're taking the enum key as a URL parameter for sorting or filtering for example.
 
 ```php
-use BenSampo\Enum\Rules\EnumKey;
+use Arslan\Enum\Rules\EnumKey;
 
 public function store(Request $request)
 {
@@ -740,7 +740,7 @@ public function store(Request $request)
 Additionally you can validate that a parameter is an instance of a given enum.
 
 ```php
-use BenSampo\Enum\Rules\Enum;
+use Arslan\Enum\Rules\Enum;
 
 public function store(Request $request)
 {
@@ -771,7 +771,7 @@ You can also use the 'pipe' syntax for rules.
 Run the following command to publish the language files to your `lang` folder.
 
 ```
-php artisan vendor:publish --provider="BenSampo\Enum\EnumServiceProvider" --tag="translations"
+php artisan vendor:publish --provider="Arslan\Enum\EnumServiceProvider" --tag="translations"
 ```
 
 ### Enum descriptions
@@ -815,8 +815,8 @@ return [
 Now, you just need to make sure that your enum implements the `LocalizedEnum` interface as demonstrated below:
 
 ```php
-use BenSampo\Enum\Enum;
-use BenSampo\Enum\Contracts\LocalizedEnum;
+use Arslan\Enum\Enum;
+use Arslan\Enum\Contracts\LocalizedEnum;
 
 final class UserType extends Enum implements LocalizedEnum
 {
@@ -833,8 +833,8 @@ The `getDescription` method will now look for the value in your localization fil
 If you'd like to return a custom description for your enum class, add a `Description` attribute to your Enum class:
 
 ```php
-use BenSampo\Enum\Enum;
-use BenSampo\Enum\Attributes\Description;
+use Arslan\Enum\Enum;
+use Arslan\Enum\Attributes\Description;
 
 #[Description('List of available User types')]
 final class UserType extends Enum
@@ -852,8 +852,8 @@ You may also override the `getClassDescription` method on the base Enum class if
 If you'd like to return a custom description for your enum values, add a `Description` attribute to your Enum constants:
 
 ```php
-use BenSampo\Enum\Enum;
-use BenSampo\Enum\Attributes\Description;
+use Arslan\Enum\Enum;
+use Arslan\Enum\Attributes\Description;
 
 final class UserType extends Enum
 {
@@ -898,7 +898,7 @@ Use [PHPStan Extension Installer](https://github.com/phpstan/extension-installer
 
 ```neon
 includes:
-- vendor/bensampo/laravel-enum/extension.neon
+- vendor/Arslan/laravel-enum/extension.neon
 ```
 
 ## Artisan Command List
@@ -1052,7 +1052,7 @@ var_dump(UserType::getInstances());
 
 array(4) {
   'Administrator' =>
-  class BenSampo\Enum\Tests\Enums\UserType#415 (3) {
+  class Arslan\Enum\Tests\Enums\UserType#415 (3) {
     public $key =>
     string(13) "Administrator"
     public $value =>
@@ -1061,7 +1061,7 @@ array(4) {
     string(13) "Administrator"
   }
   'Moderator' =>
-  class BenSampo\Enum\Tests\Enums\UserType#396 (3) {
+  class Arslan\Enum\Tests\Enums\UserType#396 (3) {
     public $key =>
     string(9) "Moderator"
     public $value =>
@@ -1070,7 +1070,7 @@ array(4) {
     string(9) "Moderator"
   }
   'Subscriber' =>
-  class BenSampo\Enum\Tests\Enums\UserType#393 (3) {
+  class Arslan\Enum\Tests\Enums\UserType#393 (3) {
     public $key =>
     string(10) "Subscriber"
     public $value =>
@@ -1079,7 +1079,7 @@ array(4) {
     string(10) "Subscriber"
   }
   'SuperAdministrator' =>
-  class BenSampo\Enum\Tests\Enums\UserType#102 (3) {
+  class Arslan\Enum\Tests\Enums\UserType#102 (3) {
     public $key =>
     string(18) "SuperAdministrator"
     public $value =>
@@ -1105,6 +1105,6 @@ UserType::coerce(99); // Returns null (not a valid enum value)
 Run the following command to publish the stub files to the `stubs` folder in the root of your application.
 
 ```shell
-php artisan vendor:publish --provider="BenSampo\Enum\EnumServiceProvider" --tag="stubs"
+php artisan vendor:publish --provider="Arslan\Enum\EnumServiceProvider" --tag="stubs"
 ```
 # laravel-enum

@@ -1,6 +1,6 @@
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 /** @var UserType $userType */
 
 ['foo' => $userType];
@@ -10,7 +10,7 @@ use BenSampo\Enum\Tests\Enums\UserType;
 -----
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\UserType;
 /** @var UserType $userType */
 
 ['foo' => $userType];

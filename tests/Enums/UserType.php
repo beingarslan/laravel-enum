@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests\Enums;
+namespace Arslan\Enum\Tests\Enums;
 
-use BenSampo\Enum\Enum;
+use Arslan\Enum\Enum;
 
 /**
  * @method static static Administrator()

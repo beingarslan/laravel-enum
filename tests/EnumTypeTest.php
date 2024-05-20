@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\EnumType;
-use BenSampo\Enum\Tests\Enums\StringValues;
+use Arslan\Enum\EnumType;
+use Arslan\Enum\Tests\Enums\StringValues;
 use Doctrine\DBAL\Platforms\MySQL57Platform;
 use Doctrine\DBAL\Types\Type;
 

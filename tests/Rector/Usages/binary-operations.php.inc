@@ -1,7 +1,7 @@
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
-use BenSampo\Enum\Tests\Enums\StringValues;
+use Arslan\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\StringValues;
 
 /** @var UserType $userType */
 /** @var StringValues|null $maybeStringValues */
@@ -20,8 +20,8 @@ $userType->is($param ?? UserType::Administrator);
 -----
 <?php
 
-use BenSampo\Enum\Tests\Enums\UserType;
-use BenSampo\Enum\Tests\Enums\StringValues;
+use Arslan\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\StringValues;
 
 /** @var UserType $userType */
 /** @var StringValues|null $maybeStringValues */

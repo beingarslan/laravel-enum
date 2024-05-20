@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Traits;
+namespace Arslan\Enum\Traits;
 
-use BenSampo\Enum\FlaggedEnum;
+use Arslan\Enum\FlaggedEnum;
 use Illuminate\Database\Eloquent\Builder;
 
 trait QueriesFlaggedEnums

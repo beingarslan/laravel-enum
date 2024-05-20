@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Rules;
+namespace Arslan\Enum\Rules;
 
-use BenSampo\Enum\FlaggedEnum;
+use Arslan\Enum\FlaggedEnum;
 use Illuminate\Contracts\Validation\Rule;
 
 class EnumValue implements Rule

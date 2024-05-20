@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Attributes;
+namespace Arslan\Enum\Attributes;
 
 #[\Attribute(\Attribute::TARGET_CLASS_CONSTANT | \Attribute::TARGET_CLASS)]
 class Description

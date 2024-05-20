@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum;
+namespace Arslan\Enum;
 
-use BenSampo\Enum\Attributes\Description;
-use BenSampo\Enum\Casts\EnumCast;
-use BenSampo\Enum\Contracts\EnumContract;
-use BenSampo\Enum\Contracts\LocalizedEnum;
-use BenSampo\Enum\Exceptions\InvalidEnumKeyException;
-use BenSampo\Enum\Exceptions\InvalidEnumMemberException;
+use Arslan\Enum\Attributes\Description;
+use Arslan\Enum\Casts\EnumCast;
+use Arslan\Enum\Contracts\EnumContract;
+use Arslan\Enum\Contracts\LocalizedEnum;
+use Arslan\Enum\Exceptions\InvalidEnumKeyException;
+use Arslan\Enum\Exceptions\InvalidEnumMemberException;
 use Illuminate\Contracts\Database\Eloquent\Castable;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Facades\Lang;
@@ -51,7 +51,7 @@ abstract class Enum implements EnumContract, Castable, Arrayable, \JsonSerializa
      *
      * @param  TValue  $enumValue
      *
-     * @throws \BenSampo\Enum\Exceptions\InvalidEnumMemberException
+     * @throws \Arslan\Enum\Exceptions\InvalidEnumMemberException
      */
     public function __construct(mixed $enumValue)
     {
@@ -103,7 +103,7 @@ abstract class Enum implements EnumContract, Castable, Arrayable, \JsonSerializa
     /**
      * Make an enum instance from a given key.
      *
-     * @throws \BenSampo\Enum\Exceptions\InvalidEnumKeyException
+     * @throws \Arslan\Enum\Exceptions\InvalidEnumKeyException
      */
     public static function fromKey(string $key): static
     {

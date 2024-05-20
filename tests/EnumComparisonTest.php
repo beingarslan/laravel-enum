@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace BenSampo\Enum\Tests;
+namespace Arslan\Enum\Tests;
 
-use BenSampo\Enum\Tests\Enums\IntegerValues;
-use BenSampo\Enum\Tests\Enums\StringValues;
-use BenSampo\Enum\Tests\Enums\UserType;
+use Arslan\Enum\Tests\Enums\IntegerValues;
+use Arslan\Enum\Tests\Enums\StringValues;
+use Arslan\Enum\Tests\Enums\UserType;
 use PHPUnit\Framework\TestCase;
 
 final class EnumComparisonTest extends TestCase
